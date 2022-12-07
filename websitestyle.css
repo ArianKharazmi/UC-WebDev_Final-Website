@@ -1,0 +1,144 @@
+* {box-sizing: border-box; }
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block; }
+
+body { background-color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+#wrapper { width: 100%;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: #00eeff;
+           background-image: linear-gradient(to bottom, #000000, #ffffff);
+           min-width: 1000px;
+           max-width: 1000px;
+           box-shadow: 4px 4px 4px #ffffff;
+           border: 1.5px solid #aaaaaa;}
+
+header { background-color: #ffffff;
+       color: #000000;
+       text-align: center;
+       height: 80px;
+       padding-top: 20px;
+       padding: 1em;}
+
+
+
+
+h1 {margin-bottom: 0;
+    margin-top: 0;
+    font-family: Arial, "Helvetica Sans", sans-serif;
+    letter-spacing: 0.001em;
+    font-size: 2.5em;
+}
+
+nav { background-color: #000000;
+    font-size: 150%;
+    padding: 0.8em;
+    float: center;
+    width: auto;
+    height: 2.4em;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+
+nav a { text-decoration: none;}
+nav a:link {color: #5ff2ff; }
+nav a:visited {color: #ffffff}
+nav a:hover {color: #b4f0fa}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+
+main { background-color: #FFFFFF;
+    padding: 1px 20px 20px 20px;
+    margin: 190px;
+    display: block;}
+
+
+h2 { color: #000000;
+    text-shadow: 0.1px 0.1px #CCCCCC;
+    font-family: Arial, "Helvetica Sans", sans-serif;}
+
+h3 {font-family: Arial, "Helvetica Sans", sans-serif;}
+
+dt { color: #4e49ad; }
+
+.open {color: #33404e; 
+        font-weight: bold;}
+
+main ul { list-style-image: url(img1.PNG);}
+
+#contact { font-size: 90%; }
+
+
+footer { font-size: 75%;
+        font-style: bold;
+        padding: 15px;
+        margin: 190px;
+        font-family: Arial, "Helvetica Sans", sans-serif;
+        text-align: center;
+        background-color: #FFFFFF;}
+
+
+#aboutMe { background-image: url(img1.PNG);
+        margin: 190px;
+        height: 300px;
+        background-repeat: no-repeat;
+        
+}
+
+
+#contact { font-size: 90%; }
+
+#mobile { display: none; }
+
+#desktop { display: inline; }
+
+@media only screen and (max-width: 64em) {
+
+body { margin: 0;
+          background-color: #FFFFFF; }
+    #wrapper { min-width: 0;
+               width: auto;
+               box-shadow: none;
+               border: none; }
+    header { padding-top: 0.5em;
+             padding-bottom: 0.5em;
+             padding: 0; 
+             height: auto;  }
+     h1 { letter-spacing: 0.1em; }
+     main { margin: 0; }
+     nav { float: none; 
+          width: auto;
+          text-align: auto;
+          padding: 0.5em;  }
+    nav li { display: inline; 
+          padding: 0.25em 0.75em; }
+    footer { margin: 0;}
+
+
+
+}
+
+@media only screen and (max-width: 37.5em) {
+    main { padding: 0.1em 1em;
+            font-size: 90%; }
+    h1 { font-size: 2em;}
+    nav { padding: 0; }
+    nav li { display: block; margin: 0; border: solid 2px #ff0000; }
+    nav a { display: block; }
+    #mobile { display: inline; }
+    #desktop { display: none; }
+
+}
